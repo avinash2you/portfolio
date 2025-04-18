@@ -1,0 +1,30 @@
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.skillsCategory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.skill {
+  display: flex;
+  gap: 2px;
+  img {
+    width: 20px;
+  }
+}
+
+hr {
+  width: 80%;
+  height: 1px;
+  background-color: var(--text-color);
+  border: none;
+  margin: 20px 0;
+  align-self: center;
+}

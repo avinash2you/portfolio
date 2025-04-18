@@ -1,0 +1,7 @@
+.footerContainer {
+  text-align: center;
+  p {
+    font-size: 16px;
+    color: var(--footer-text-color);
+  }
+}

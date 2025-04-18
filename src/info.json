@@ -1,0 +1,87 @@
+{
+  "firstName": "Avinash",
+  "middleName": "Mani Kiran",
+  "lastName": "Yedlapalli",
+  "email": "avinashmanikiran@gmail.com",
+  "phone": "+918919988003",
+  "description": "Crafting seamless digital experiences, from pixel-perfect interfaces to powerful backend logic and performance.",
+  "profiles": {
+    "GitHub": {
+      "network": "GitHub",
+      "username": "avinash2you",
+      "url": "https://github.com/avinash2you"
+    },
+    "LinkedIn": {
+      "network": "LinkedIn",
+      "username": "avinashmanikiran",
+      "url": "https://www.linkedin.com/in/avinash-mani-kiran-8972131b8/"
+    },
+    "Instagram": {
+      "network": "Instagram",
+      "username": "avinash2you",
+      "url": "https://www.instagram.com/avinash2you"
+    },
+    "Twitter": {
+      "network": "Twitter",
+      "username": "avinash2you",
+      "url": "https://x.com/avinash2you"
+    }
+  },
+  "projects": [
+    {
+      "name": "Portfolio",
+      "subtitle": "My Personal Portfolio",
+      "description": "A collection of my projects and work experience.",
+      "url": "https://avinash2you.github.io/portfolio",
+      "image": "/assets/my-portfolio.png"
+    },
+    {
+      "name": "Health Roof",
+      "subtitle": "A Health Management System",
+      "description": "A web application for managing health records and appointments.",
+      "url": "https://avinash2you.github.io/portfolio",
+      "image": "/assets/healthroof.png"
+    },
+    {
+      "name": "at Theatres",
+      "subtitle": "An upcoming project",
+      "description": "A web application for booking movie tickets.",
+      "url": "",
+      "image": "/assets/atTheatres.png"
+    },
+    {
+      "name": "Hotstar Clone",
+      "subtitle": "An upcoming project",
+      "description": "A web application for streaming movies and shows.",
+      "url": "",
+      "image": "/assets/hotstar.png"
+    }
+  ],
+  "skills": {
+    "CMS": [
+      "AEM",
+      "HTL-Sightly",
+      "Java",
+      "Granite UI",
+      "Coral UI",
+      "OSGI",
+      "Apache Sling",
+      "JCR",
+      "Groovy"
+    ],
+    "Languages": ["Java", "JavaScript(ES6+)", "TypeScript", "Python"],
+    "Frontend": [
+      "React",
+      "Redux",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "Bootstrap",
+      "jQuery"
+    ],
+    "Unit Testing Frameworks": ["JUnit", "AEM Mockito", "Sling Mocks"],
+    "Backend": ["Node.js", "Express.js"],
+    "Databases": ["MongoDB", "MySQL"],
+    "Tools": ["Git", "Postman", "Azure", "OneTrust"]
+  }
+}
