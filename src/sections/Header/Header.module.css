@@ -1,0 +1,47 @@
+.headerSection {
+  padding: 2rem 2rem;
+  display: flex;
+}
+
+.headerContainer {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.headerLink {
+  position: relative;
+  font-family: "roboto mono", monospace;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+  &:active {
+    color: var(--btn-color);
+  }
+}
+
+.headerLink::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--btn-color);
+  transition: width 0.3s ease;
+}
+
+.headerLink:hover {
+  color: var(--btn-color);
+}
+
+.headerLink:hover::after {
+  width: 100%;
+}

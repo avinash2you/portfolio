@@ -84,7 +84,7 @@ a {
 
 @media (width>=768px) {
   #root {
-    gap: 100px;
+    gap: 60px;
   }
   h1 {
     font-size: 40px;
@@ -104,7 +104,7 @@ a {
 
 @media (width>=1400px) {
   #root {
-    gap: 200px;
+    gap: 50px;
   }
   h1 {
     font-size: 48px;
