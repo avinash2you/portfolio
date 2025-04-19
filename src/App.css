@@ -26,18 +26,13 @@
   }
 }
 
-body {
-  background: var(--background-color);
-  display: flex;
-  justify-content: center;
-  margin: 0 auto 60px;
+.main {
+  align-items: center;
+  padding: 3rem 4rem;
 }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
+body {
+  background: var(--background-color);
 }
 
 h1,
@@ -83,9 +78,6 @@ a {
 }
 
 @media (width>=768px) {
-  #root {
-    gap: 60px;
-  }
   h1 {
     font-size: 40px;
   }
@@ -103,9 +95,6 @@ a {
 }
 
 @media (width>=1400px) {
-  #root {
-    gap: 50px;
-  }
   h1 {
     font-size: 48px;
   }

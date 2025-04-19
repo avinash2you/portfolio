@@ -1,10 +1,16 @@
 import React from "react";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
+import { useTheme } from "../../common/ThemeContext.jsx";
+import sun from "../../assets/sun.svg";
+import moon from "../../assets/moon.svg";
 
 function Header() {
+  const { theme, toggleTheme } = useTheme();
+  const themeIcon = theme === "light" ? sun : moon;
+
   return (
-    <div id="header" className={styles.headerSection}>
+    <section id="header" className={styles.headerSection}>
       <ul className={styles.headerContainer}>
         <li>
           <Link to="/" className={styles.headerLink}>
@@ -27,7 +33,13 @@ function Header() {
           </Link>
         </li>
       </ul>
-    </div>
+      <img
+        className={styles.colorMode}
+        src={themeIcon}
+        onClick={toggleTheme}
+        alt="Theme icon"
+      />
+    </section>
   );
 }
 

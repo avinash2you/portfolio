@@ -1,11 +1,9 @@
 import React from "react";
 import styles from "./Hero.module.css";
 import heroImg from "../../assets/hero-img.png";
-import sun from "../../assets/sun.svg";
-import moon from "../../assets/moon.svg";
 import info from "../../info.json";
-import twitterLight from "../../assets/twitter-light.svg";
-import twitterDark from "../../assets/twitter-dark.svg";
+import instagramLight from "../../assets/instagram-light.png";
+import instagramDark from "../../assets/instagram-dark.png";
 import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedInLight from "../../assets/linkedin-light.svg";
@@ -16,23 +14,16 @@ import { MdOutlineFileDownload } from "react-icons/md";
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
-  const themeIcon = theme === "light" ? sun : moon;
-  const twitterIcon = theme === "light" ? twitterLight : twitterDark;
+  const instagramIcon = theme === "light" ? instagramLight : instagramDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedInIcon = theme === "light" ? linkedInLight : linkedInDark;
   return (
     <section id="hero" className={styles.heroSection}>
-      <div className={styles.colorModeContainer}>
+      <div className={styles.heroImgContainer}>
         <img
           className={styles.hero}
           src={heroImg}
           alt="Profile picture of Avinash Mani Kiran"
-        />
-        <img
-          className={styles.colorMode}
-          src={themeIcon}
-          onClick={toggleTheme}
-          alt="Theme icon"
         />
       </div>
       <div className={styles.info}>
@@ -42,8 +33,8 @@ function Hero() {
         <h2 className={styles.heroSubtitle}>Full-Stack Developer</h2>
 
         <span>
-          <a href={info.profiles.Twitter.url} target="_blank">
-            <img src={twitterIcon} alt="Twitter Icon" />
+          <a href={info.profiles.Instagram.url} target="_blank">
+            <img src={instagramIcon} alt="Instagram Icon" />
           </a>
           <a href={info.profiles.GitHub.url} target="_blank">
             <img src={githubIcon} alt="Github Icon" />

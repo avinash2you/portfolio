@@ -64,20 +64,8 @@
   }
 }
 
-.colorModeConatiner {
+.heroImgContainer {
   position: relative;
-}
-
-.colorMode {
-  position: absolute;
-  width: 25px;
-  &:hover {
-    cursor: pointer;
-  }
-  &:active {
-    transform: rotate(360deg);
-    transition: all 0.5s ease-in-out;
-  }
 }
 
 .description {

@@ -32,13 +32,13 @@
       "name": "Portfolio",
       "subtitle": "My Personal Portfolio",
       "description": "A collection of my projects and work experience.",
-      "url": "https://avinash2you.github.io/portfolio",
+      "url": "https://github.com/avinash2you/avinash",
       "image": "/assets/my-portfolio.png"
     },
     {
       "name": "Health Roof",
-      "subtitle": "A Health Management System",
-      "description": "A web application for managing health records and appointments.",
+      "subtitle": "Diagnosis and Treatment",
+      "description": "A web application for detecting health issues.",
       "url": "https://avinash2you.github.io/portfolio",
       "image": "/assets/healthroof.png"
     },

@@ -1,6 +1,8 @@
 .headerSection {
   padding: 2rem 2rem;
   display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
 }
 
 .headerContainer {
@@ -22,9 +24,10 @@
   color: var(--text-color);
   font-weight: 500;
   transition: color 0.3s ease;
-  &:active {
-    color: var(--btn-color);
-  }
+}
+
+.headerLink:active {
+  color: var(--btn-color);
 }
 
 .headerLink::after {
@@ -44,4 +47,17 @@
 
 .headerLink:hover::after {
   width: 100%;
+}
+
+.colorMode {
+  width: 25px;
+}
+
+.colorMode:hover {
+  cursor: pointer;
+}
+
+.colorMode:active {
+  transform: rotate(360deg);
+  transition: all 0.5s ease-in-out;
 }
