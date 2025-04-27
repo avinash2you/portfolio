@@ -6,6 +6,7 @@
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
+  --menu-bg-color: #e6f1fe;
 }
 
 [data-theme="dark"] {
@@ -21,14 +22,22 @@
   --text-color: #fff;
   --form-text-color: #fff;
   --footer-text-color: #bbb;
-  .themeIcon {
-    color: #f2ea09;
-  }
+  --menu-bg-color: #222;
 }
 
 .main {
+  display: flex;
+  height: 75vh;
   align-items: center;
+  justify-content: center;
   padding: 3rem 4rem;
+}
+.background-svg {
+  position: absolute;
+  top: 20%;
+  right: 2%;
+  width: 40rem;
+  z-index: -1;
 }
 
 body {
@@ -100,5 +109,16 @@ a {
   }
   .sectionTitle {
     margin-bottom: 75px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    height: auto;
+  }
+  .background-svg {
+    width: 25rem;
+    right: 0;
+    top: 10%;
   }
 }
