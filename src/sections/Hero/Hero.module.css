@@ -63,6 +63,12 @@
     }
   }
 }
+.heroTitle {
+  font-family: "Sacramento", cursive;
+  text-transform: none !important;
+  font-size: 8rem;
+  color: var(--highlight-text-color);
+}
 
 .heroImgContainer {
   position: relative;
@@ -99,5 +105,10 @@
       max-width: 400px;
       width: 400px;
     }
+  }
+}
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 5rem;
   }
 }

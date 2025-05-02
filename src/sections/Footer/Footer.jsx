@@ -4,11 +4,7 @@ import styles from "./Footer.module.css";
 function Footer() {
   return (
     <section id="footer" className={styles.footerContainer}>
-      <p>
-        &copy; 2025 Avinash Yedlapalli
-        <br />
-        All rights reserved.
-      </p>
+      <p>&copy; 2025 All rights reserved.</p>
     </section>
   );
 }

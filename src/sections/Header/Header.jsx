@@ -6,6 +6,7 @@ import moon from "../../assets/moon.svg";
 import HeaderContent from "../../common/HeaderContent.jsx";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseSharp } from "react-icons/io5";
 
 function Header() {
   const { theme, toggleTheme } = useTheme();
@@ -16,10 +17,17 @@ function Header() {
     <>
       <section id="header" className={styles.headerSection}>
         <div className={styles.headerMobileView}>
-          <GiHamburgerMenu
-            className={styles.headerMenu}
-            onClick={() => setShowMenu(!showMenu)}
-          />
+          {!showMenu ? (
+            <GiHamburgerMenu
+              className={styles.headerMenu}
+              onClick={() => setShowMenu(!showMenu)}
+            />
+          ) : (
+            <IoCloseSharp
+              className={styles.headerMenu}
+              onClick={() => setShowMenu(!showMenu)}
+            />
+          )}
         </div>
         <div className={styles.headerDesktopView}>
           <HeaderContent />

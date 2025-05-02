@@ -83,5 +83,53 @@
     "Backend": ["Node.js", "Express.js"],
     "Databases": ["MongoDB", "MySQL"],
     "Tools": ["Git", "Postman", "Azure", "OneTrust"]
-  }
+  },
+  "work": [
+    {
+      "Microchip Technology": [
+        {
+          "positionTitle": "Software Engineer 1",
+          "startDate": "Jul 2023",
+          "isCurrent": true,
+          "location": "Bangalore, India"
+        },
+        {
+          "positionTitle": "Intern",
+          "startDate": "Jan 2023",
+          "endDate": "Jun 2023",
+          "location": "Bangalore, India"
+        }
+      ]
+    }
+  ],
+  "workItems": [
+    {
+      "title": "Performance Optimization",
+      "description": "Revamped global search and landing page UI, improving load speed and overall performance by 40%."
+    },
+    {
+      "title": "SSO & Personalization",
+      "description": "Implemented Azure B2C with OAuth 2.0 for secure SSO and progressive profiling, increasing user registrations by 7% and personalization by 30%."
+    },
+    {
+      "title": "Content Workflow Automation",
+      "description": "Built AEM Page Properties functionality for metadata reuse, reducing template migration time by 30% for 100+ pages."
+    },
+    {
+      "title": "Scalable AEM Development",
+      "description": "Developed reusable AEM components, optimized Sling Servlets, and schedulers to process over 60,000 JCR documents efficiently."
+    },
+    {
+      "title": "Secure Form Handling",
+      "description": "Integrated AEM User and Authorization APIs for dynamic, role-based validations, improving authoring security and accuracy."
+    },
+    {
+      "title": "Real-Time & Configurable Tools",
+      "description": "Created custom Sling Servlet APIs for dynamic product search and intranet press updates, and enabled environment-specific configurations using runmodes."
+    },
+    {
+      "title": "Automation & Stability",
+      "description": "Automated JCR metadata tasks with Groovy scripts and resolved critical bugs, improving performance and reliability."
+    }
+  ]
 }

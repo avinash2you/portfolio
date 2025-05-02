@@ -8,10 +8,9 @@ import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedInLight from "../../assets/linkedin-light.svg";
 import linkedInDark from "../../assets/linkedin-dark.svg";
-import resume from "../../assets/avinash-mani-kiran-resume.pdf";
+import resume from "../../assets/avinash.pdf";
 import { useTheme } from "../../common/ThemeContext.jsx";
 import { MdOutlineFileDownload } from "react-icons/md";
-import bg from "../../assets/bg.svg";
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
@@ -20,7 +19,6 @@ function Hero() {
   const linkedInIcon = theme === "light" ? linkedInLight : linkedInDark;
   return (
     <>
-      <img className="background-svg" src={bg} alt="Background SVG" />
       <section id="hero" className={styles.heroSection}>
         <div className={styles.heroImgContainer}>
           <img
@@ -30,9 +28,7 @@ function Hero() {
           />
         </div>
         <div className={styles.info}>
-          <h1 className={styles.heroTitle}>
-            {info.firstName + " " + info.lastName}
-          </h1>
+          <h1 className={styles.heroTitle}>{info.firstName}</h1>
           <h2 className={styles.heroSubtitle}>Full-Stack Developer</h2>
 
           <span>
