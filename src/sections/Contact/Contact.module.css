@@ -10,18 +10,6 @@
   font-weight: bold;
 }
 
-.errorMessage {
-  margin-top: 1rem;
-  color: red;
-  font-weight: bold;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
 textarea,
 input:not([type="submit"]) {
   width: 250px;

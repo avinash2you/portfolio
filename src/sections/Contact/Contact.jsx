@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Contact.module.css";
+import Modal from "../../common/Modal";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -8,8 +9,7 @@ function Contact() {
     message: "",
   });
 
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [error, setError] = useState("");
+  const [modalMessage, setModalMessage] = useState(null);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -17,8 +17,6 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitted(false);
-    setError("");
 
     try {
       const response = await fetch("https://formspree.io/f/xkgjleww", {
@@ -30,13 +28,13 @@ function Contact() {
       });
 
       if (response.ok) {
-        setIsSubmitted(true);
+        setModalMessage("Your message has been sent successfully!");
         setFormData({ name: "", email: "", message: "" });
       } else {
-        setError("Failed to send message. Please try again.");
+        setModalMessage("Failed to send message. Please try again.");
       }
     } catch (err) {
-      setError("Something went wrong. Please try again.");
+      setModalMessage("Something went wrong. Please try again.");
     }
   };
 
@@ -47,7 +45,6 @@ function Contact() {
         <div className={styles.formGroup}>
           <input
             type="text"
-            id="name"
             name="name"
             placeholder="Name"
             value={formData.name}
@@ -58,7 +55,6 @@ function Contact() {
         <div className={styles.formGroup}>
           <input
             type="email"
-            id="email"
             name="email"
             placeholder="Email"
             value={formData.email}
@@ -68,24 +64,19 @@ function Contact() {
         </div>
         <div className={styles.formGroup}>
           <textarea
-            id="message"
             name="message"
             placeholder="Message"
             value={formData.message}
             onChange={handleChange}
             required
-          ></textarea>
+          />
         </div>
         <input type="submit" className={styles.submitBtn} value="Submit" />
       </form>
 
-      {isSubmitted && (
-        <p className={styles.successMessage}>
-          Your message has been sent successfully!
-        </p>
+      {modalMessage && (
+        <Modal title={modalMessage} onClose={() => setModalMessage(null)} />
       )}
-
-      {error && <p className={styles.errorMessage}>{error}</p>}
     </section>
   );
 }

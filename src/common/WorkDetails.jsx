@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import info from "../info.json";
 import styles from "../sections/Work/Work.module.css";
+import Modal from "../common/Modal";
 
 function WorkDetails() {
   const [activeItem, setActiveItem] = useState(null);
@@ -26,21 +27,11 @@ function WorkDetails() {
       </div>
 
       {activeItem && (
-        <div className={styles.modalOverlay}>
-          <div className={styles.modalContent}>
-            <div className={styles.modalHeader}>
-              <h4 className={styles.modalTitle}>{activeItem.title}</h4>
-              <button
-                onClick={() => setActiveItem(null)}
-                className={styles.closeButton}
-              >
-                &times;
-              </button>
-            </div>
-
-            <p className={styles.modalDescription}>{activeItem.description}</p>
-          </div>
-        </div>
+        <Modal
+          title={activeItem.title}
+          description={activeItem.description}
+          onClose={() => setActiveItem(null)}
+        />
       )}
     </div>
   );
