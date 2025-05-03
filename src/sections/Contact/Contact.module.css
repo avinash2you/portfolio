@@ -4,6 +4,17 @@
   text-align: center;
   align-items: center;
 }
+.successMessage {
+  margin-top: 1rem;
+  color: green;
+  font-weight: bold;
+}
+
+.errorMessage {
+  margin-top: 1rem;
+  color: red;
+  font-weight: bold;
+}
 
 form {
   display: flex;

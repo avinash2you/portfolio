@@ -8,26 +8,35 @@ function Contact() {
     message: "",
   });
 
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState("");
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitted(false);
+    setError("");
 
-    const response = await fetch("https://formspree.io/f/xkgjleww", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+    try {
+      const response = await fetch("https://formspree.io/f/xkgjleww", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    if (response.ok) {
-      alert("Message sent successfully!");
-      setFormData({ name: "", email: "", message: "" });
-    } else {
-      alert("Failed to send message. Please try again.");
+      if (response.ok) {
+        setIsSubmitted(true);
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setError("Failed to send message. Please try again.");
+      }
+    } catch (err) {
+      setError("Something went wrong. Please try again.");
     }
   };
 
@@ -69,6 +78,14 @@ function Contact() {
         </div>
         <input type="submit" className={styles.submitBtn} value="Submit" />
       </form>
+
+      {isSubmitted && (
+        <p className={styles.successMessage}>
+          Your message has been sent successfully!
+        </p>
+      )}
+
+      {error && <p className={styles.errorMessage}>{error}</p>}
     </section>
   );
 }
