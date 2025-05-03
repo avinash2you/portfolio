@@ -1,6 +1,7 @@
 .workSection {
   display: flex;
   gap: 8rem;
+  align-items: center;
 }
 .companyContainer {
   display: flex;
@@ -53,12 +54,6 @@
   color: var(--text-color);
   font-family: "Courier New", Courier, monospace;
   padding-left: 0.65rem;
-}
-
-.sectionTitle {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 16px;
 }
 
 .workItemList {

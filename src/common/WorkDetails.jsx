@@ -8,7 +8,6 @@ function WorkDetails() {
 
   return (
     <div className={styles.workDetailsContainer}>
-      <h3 className={styles.sectionTitle}>KEY HIGHLIGHTS</h3>
       <div className={styles.workItemList}>
         {info.workItems.map((item, index) => (
           <div key={index} className={styles.workItem}>
