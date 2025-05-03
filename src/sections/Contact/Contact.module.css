@@ -4,10 +4,11 @@
   text-align: center;
   align-items: center;
 }
-.successMessage {
-  margin-top: 1rem;
-  color: green;
-  font-weight: bold;
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 textarea,
