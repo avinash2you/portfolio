@@ -3,6 +3,11 @@
   gap: 8rem;
   align-items: center;
 }
+.workContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 .companyContainer {
   display: flex;
   flex-direction: column;
@@ -38,7 +43,11 @@
     background-color: var(--active-highlight-color);
   }
 }
-.current {
+.active,
+.inactive {
+  cursor: pointer;
+}
+.active {
   background-color: var(--active-highlight-color);
   font-size: 16px;
   color: var(--text-color);
@@ -46,7 +55,7 @@
   padding: 0.65rem;
   border-radius: 0.5rem;
 }
-.past {
+.inactive {
   padding-left: 0.65rem;
 }
 .duration,
@@ -80,6 +89,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  width: 80%;
 }
 
 .checkmarkIcon {
@@ -94,6 +104,7 @@
 
 .learnMoreButton {
   color: var(--learn-more-btn-color);
+  text-wrap: nowrap;
   font-weight: 500;
   border: none;
   background: none;

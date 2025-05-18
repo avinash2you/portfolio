@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
-import info from "../info.json";
 import styles from "../sections/Work/Work.module.css";
 import Modal from "../common/Modal";
 
-function WorkDetails() {
+function WorkDetails({ workItems }) {
   const [activeItem, setActiveItem] = useState(null);
 
   return (
     <div className={styles.workDetailsContainer}>
       <div className={styles.workItemList}>
-        {info.workItems.map((item, index) => (
+        {workItems.map((item, index) => (
           <div key={index} className={styles.workItem}>
             <div className={styles.workItemTitle}>
               <IoCheckmarkCircleOutline className={styles.checkmarkIcon} />

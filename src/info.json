@@ -90,46 +90,91 @@
         {
           "positionTitle": "Software Engineer 1",
           "startDate": "Jul 2023",
-          "isCurrent": true,
-          "location": "Bangalore, India"
+          "location": "Bangalore, India",
+          "workItems": [
+            {
+              "title": "SSO & User Onboarding",
+              "description": "Integrated Azure AD B2C with MSAL.js for secure SSO and progressive profiling, increasing user registrations by 7%."
+            },
+            {
+              "title": "AI Integration in AEM",
+              "description": "Embedded OpenAI Chatbot as a Rich Text Editor plugin within AEM Forms, improving authoring efficiency by 5%."
+            },
+            {
+              "title": "Document Synchronization",
+              "description": "Built Sling Schedulers to sync 60,000+ documents and blogs with 99.9% accuracy, enhancing data consistency."
+            },
+            {
+              "title": "Template Migration Utility",
+              "description": "Created a Metadata Copy Tool for AEM template migrations, reducing manual configuration effort by 30%."
+            },
+            {
+              "title": "Document Versioning System",
+              "description": "Developed a versioning tool using React, Node.js, and Express.js to manage and display the latest versions of documents in AEM DAM."
+            },
+            {
+              "title": "Dynamic Validation in AEM",
+              "description": "Integrated AEM User and Authorization APIs for secure, dynamic, role-based dialog field validations."
+            },
+            {
+              "title": "UI Revamp & Engagement",
+              "description": "Redesigned the Global Search and Landing Page UI, resulting in a 15% increase in user engagement."
+            },
+            {
+              "title": "Cookie Compliance Integration",
+              "description": "Contributed to OneTrust CMP integration in AEM to achieve 100% GDPR and CCPA compliance with script auto-blocking."
+            }
+          ]
         },
         {
-          "positionTitle": "Intern",
+          "positionTitle": "Software Intern",
           "startDate": "Jan 2023",
           "endDate": "Jun 2023",
-          "location": "Bangalore, India"
+          "location": "Bangalore, India",
+          "workItems": [
+            {
+              "title": "AEM Core Development",
+              "description": "Demonstrated strong understanding of AEM concepts including Editable Templates, Core/Custom Components, Sling Models, Dispatcher, JCR Queries, Content/Experience Fragments, Workflows, OSGi Configs, and Client-Side Validations."
+            },
+            {
+              "title": "Environment-Specific Configs",
+              "description": "Built a lower environment AEM runmode to support environment-specific configurations without core code changes."
+            },
+            {
+              "title": "Dynamic API Integration",
+              "description": "Developed custom Sling Servlets with Sling Models and JCR-SQL2 for product image rendering and real-time press updates."
+            },
+            {
+              "title": "JCR Automation with Groovy",
+              "description": "Automated metadata operations in JCR using Groovy scripts, enhancing repository maintainability and efficiency."
+            }
+          ]
         }
       ]
-    }
-  ],
-  "workItems": [
-    {
-      "title": "Performance Optimization",
-      "description": "Revamped global search and landing page UI, improving load speed and overall performance by 40%."
     },
     {
-      "title": "SSO & Personalization",
-      "description": "Implemented Azure B2C with OAuth 2.0 for secure SSO and progressive profiling, increasing user registrations by 7% and personalization by 30%."
-    },
-    {
-      "title": "Content Workflow Automation",
-      "description": "Built AEM Page Properties functionality for metadata reuse, reducing template migration time by 30% for 100+ pages."
-    },
-    {
-      "title": "Scalable AEM Development",
-      "description": "Developed reusable AEM components, optimized Sling Servlets, and schedulers to process over 60,000 JCR documents efficiently."
-    },
-    {
-      "title": "Secure Form Handling",
-      "description": "Integrated AEM User and Authorization APIs for dynamic, role-based validations, improving authoring security and accuracy."
-    },
-    {
-      "title": "Real-Time & Configurable Tools",
-      "description": "Created custom Sling Servlet APIs for dynamic product search and intranet press updates, and enabled environment-specific configurations using runmodes."
-    },
-    {
-      "title": "Automation & Stability",
-      "description": "Automated JCR metadata tasks with Groovy scripts and resolved critical bugs, improving performance and reliability."
+      "Jio Platforms": [
+        {
+          "positionTitle": "UI Developer Intern",
+          "startDate": "Aug 2022",
+          "endDate": "Dec 2022",
+          "location": "Hyderabad, India",
+          "workItems": [
+            {
+              "title": "React Component Development",
+              "description": "Applied core React concepts such as components, hooks, props, and state management to build scalable UI features."
+            },
+            {
+              "title": "Reusable UI Features",
+              "description": "Built reusable and responsive UI components, including a navigation bar with routing and a validated 'Contact Us' form."
+            },
+            {
+              "title": "Dark/Light Mode Implementation",
+              "description": "Implemented a global dark/light mode toggle across the website using React and Tailwind CSS."
+            }
+          ]
+        }
+      ]
     }
   ]
 }
