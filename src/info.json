@@ -4,7 +4,7 @@
   "lastName": "Yedlapalli",
   "email": "avinashmanikiran@gmail.com",
   "phone": "+918919988003",
-  "description": "Crafting seamless digital experiences, from pixel-perfect interfaces to powerful backend logic and performance.",
+  "description": "AEM Full Stack Developer with 3+ years delivering enterprise solutions on Adobe Experience Manager (AEM 6.x & Cloud Service). Deep expertise in OSGi/Sling/JCR, custom components, Dispatcher caching, and RESTful API integrations.",
   "profiles": {
     "GitHub": {
       "network": "GitHub",
@@ -29,124 +29,169 @@
   },
   "projects": [
     {
+      "name": "AI Resume Analyzer",
+      "subtitle": "React \u2022 Redux \u2022 Puter.js \u2022 Tailwind CSS",
+      "description": "AI-powered resume screening app with ATS-style scoring and tailored feedback. Managed state with Redux for scalable multi-step workflows.",
+      "url": "",
+      "image": "/assets/my-portfolio.png"
+    },
+    {
       "name": "Portfolio",
-      "subtitle": "My Personal Portfolio",
-      "description": "A collection of my projects and work experience.",
+      "subtitle": "React.js \u2022 HTML5 \u2022 CSS3",
+      "description": "Component-driven portfolio with clean routing, reusable UI sections, and mobile-first responsive design.",
       "url": "https://github.com/avinash2you/portfolio",
       "image": "/assets/my-portfolio.png"
     },
     {
       "name": "Health Roof",
-      "subtitle": "Diagnosis and Treatment",
-      "description": "A web application for detecting health issues.",
+      "subtitle": "Diagnosis & Treatment App",
+      "description": "A web application for detecting health issues using symptom analysis.",
       "url": "https://github.com/avinash2you/HealthRoof",
       "image": "/assets/healthroof.png"
     },
     {
       "name": "at Theatres",
-      "subtitle": "An upcoming project",
-      "description": "A web application for booking movie tickets.",
+      "subtitle": "Movie Ticket Booking",
+      "description": "A web application for booking movie tickets \u2014 upcoming project.",
       "url": "",
       "image": "/assets/atTheatres.png"
-    },
-    {
-      "name": "Hotstar Clone",
-      "subtitle": "An upcoming project",
-      "description": "A web application for streaming movies and shows.",
-      "url": "",
-      "image": "/assets/hotstar.png"
     }
   ],
   "skills": {
-    "CMS": [
-      "AEM",
-      "HTL-Sightly",
-      "Java",
-      "Granite UI",
-      "Coral UI",
-      "OSGI",
-      "Apache Sling",
-      "JCR",
-      "Groovy"
+    "AEM": [
+      "AEM 6.x",
+      "AEM Cloud Service",
+      "OSGi / Sling / JCR",
+      "HTL (Sightly)",
+      "Sling Models",
+      "Core Components",
+      "Adaptive Forms",
+      "Dispatcher",
+      "Cloud Manager"
     ],
-    "Languages": ["Java", "JavaScript(ES6+)", "TypeScript", "Python"],
     "Frontend": [
-      "React",
+      "JavaScript (ES6+)",
+      "ReactJS",
       "Redux",
-      "HTML",
-      "CSS",
+      "HTML5",
+      "CSS3 / LESS / SASS",
       "Tailwind CSS",
-      "Bootstrap",
-      "jQuery"
+      "Webpack"
     ],
-    "Unit Testing Frameworks": ["JUnit", "AEM Mockito", "Sling Mocks"],
-    "Backend": ["Node.js", "Express.js"],
-    "Databases": ["MongoDB", "MySQL"],
-    "Tools": ["Git", "Postman", "Azure", "OneTrust"]
+    "Backend": [
+      "Java 8+",
+      "Sling Servlets",
+      "RESTful APIs",
+      "JUnit / Mockito",
+      "Maven",
+      "Git"
+    ],
+    "Security & DevOps": [
+      "OAuth2",
+      "Azure AD B2C",
+      "OWASP",
+      "CI/CD (Azure DevOps)",
+      "AWS / Azure"
+    ],
+    "Databases": [
+      "MongoDB",
+      "MySQL"
+    ],
+    "Tools": [
+      "Git",
+      "Postman",
+      "Azure DevOps",
+      "OneTrust",
+      "Groovy"
+    ]
   },
   "work": [
     {
       "Microchip Technology": [
         {
-          "positionTitle": "Software Engineer 1",
+          "positionTitle": "Software Engineer \u2013 AEM Full Stack",
           "startDate": "Jul 2023",
-          "location": "Bangalore, India",
+          "location": "Hyderabad, India",
           "workItems": [
             {
-              "title": "SSO & User Onboarding",
-              "description": "Integrated Azure AD B2C with MSAL.js for secure SSO and progressive profiling, increasing user registrations by 7%."
+              "tag": "Architecture",
+              "title": "Architected Event-Driven DAM Sync Pipeline",
+              "metric": "60,000+ assets \u00b7 99.9% accuracy \u00b7 zero manual ops",
+              "description": "Designed and owned an event-driven content governance engine using Sling Schedulers and RESTful API integrations to synchronise over 60,000 DAM assets with downstream platforms in real-time \u2014 achieving 99.9% accuracy and eliminating manual reconciliation entirely."
             },
             {
-              "title": "AI Integration in AEM",
-              "description": "Embedded OpenAI Chatbot as a Rich Text Editor plugin within AEM Forms, improving authoring efficiency by 5%."
+              "tag": "Leadership",
+              "title": "Led AI Chatbot Integration Across AEM Product Pages",
+              "metric": "\u2191 self-service resolution \u00b7 \u2193 support ticket volume",
+              "description": "Spearheaded end-to-end integration of an AI-powered chatbot on AEM product pages using React.js and a downstream LLM API. Owned the full delivery \u2014 from architecture to deployment \u2014 resulting in measurable improvement in product discoverability and real-time self-service resolution."
             },
             {
-              "title": "Document Synchronization",
-              "description": "Built Sling Schedulers to sync 60,000+ documents and blogs with 99.9% accuracy, enhancing data consistency."
+              "tag": "Impact",
+              "title": "Delivered +15% User Engagement & +7% Registration Growth",
+              "metric": "+15% engagement \u00b7 +7% user registrations",
+              "description": "Owned the full redesign of the Global Search and Landing Page UX, paired with Dispatcher caching tuning, producing a direct 15% uplift in user engagement. In parallel, implemented Azure AD B2C SSO with MSAL.js and OAuth2 progressive profiling, growing new user registrations by 7%."
             },
             {
-              "title": "Template Migration Utility",
-              "description": "Created a Metadata Copy Tool for AEM template migrations, reducing manual configuration effort by 30%."
+              "tag": "Innovation",
+              "title": "Embedded OpenAI Copilot inside AEM Forms Rich Text Editor",
+              "metric": "+5% authoring efficiency \u00b7 inline AI suggestions",
+              "description": "Built a custom AEM Forms RTE plugin that surfaces OpenAI-generated content suggestions directly in the authoring interface \u2014 reducing drafting time and improving content consistency across product documentation without leaving the CMS."
             },
             {
-              "title": "Document Versioning System",
-              "description": "Developed a versioning tool using React, Node.js, and Express.js to manage and display the latest versions of documents in AEM DAM."
+              "tag": "Security",
+              "title": "Achieved 100% GDPR & CCPA Compliance via OneTrust CMP",
+              "metric": "100% compliant \u00b7 script auto-blocking \u00b7 global rollout",
+              "description": "Enforced OWASP security standards across the AEM application layer (XSS mitigation, input validation, secure session management) and drove OneTrust CMP integration \u2014 delivering full GDPR and CCPA compliance with automatic script blocking across all global product pages."
             },
             {
-              "title": "Dynamic Validation in AEM",
-              "description": "Integrated AEM User and Authorization APIs for secure, dynamic, role-based dialog field validations."
+              "tag": "Tooling",
+              "title": "Built Internal Automation Toolset Cutting Config Effort by 30%",
+              "metric": "\u221230% manual effort \u00b7 2 tools shipped",
+              "description": "Engineered a Metadata Copy Tool for AEM template migrations and a Document Versioning System (React + Node.js + Express.js) for managing DAM asset versions \u2014 together eliminating 30% of repetitive manual configuration work across the content team."
             },
             {
-              "title": "UI Revamp & Engagement",
-              "description": "Redesigned the Global Search and Landing Page UI, resulting in a 15% increase in user engagement."
+              "tag": "Accessibility",
+              "title": "Enforced WCAG 2.1 AA Across All Global Product Pages",
+              "metric": "AA-level \u00b7 100% global page coverage",
+              "description": "Implemented WCAG 2.1 AA accessibility standards across all AEM components and front-end templates, ensuring the platform is fully inclusive for users with disabilities across Microchip's global product catalogue."
             },
             {
-              "title": "Cookie Compliance Integration",
-              "description": "Contributed to OneTrust CMP integration in AEM to achieve 100% GDPR and CCPA compliance with script auto-blocking."
+              "tag": "Engineering",
+              "title": "AEM Cloud Service Development & CI/CD via Cloud Manager",
+              "metric": "AEM as Cloud Service \u00b7 full test coverage \u00b7 JUnit + Mockito",
+              "description": "Built custom AEM components, templates, and OSGi services aligned to Core Component best practices. Maintained full unit and integration test coverage with JUnit and Mockito, and managed all production deployments through AEM Cloud Manager CI/CD pipelines."
             }
           ]
         },
         {
-          "positionTitle": "Software Intern",
+          "positionTitle": "AEM Developer Intern",
           "startDate": "Jan 2023",
           "endDate": "Jun 2023",
           "location": "Bangalore, India",
           "workItems": [
             {
-              "title": "AEM Core Development",
-              "description": "Demonstrated strong understanding of AEM concepts including Editable Templates, Core/Custom Components, Sling Models, Dispatcher, JCR Queries, Content/Experience Fragments, Workflows, OSGi Configs, and Client-Side Validations."
+              "tag": "Security",
+              "title": "Implemented Platform-Wide Role-Based Content Governance",
+              "metric": "Platform-wide enforcement \u00b7 zero authoring bypass",
+              "description": "Built dialog-level security validations and role-based authoring controls using AEM Authorization APIs \u2014 preventing unauthorised content modifications and strengthening governance across the entire platform."
             },
             {
-              "title": "Environment-Specific Configs",
-              "description": "Built a lower environment AEM runmode to support environment-specific configurations without core code changes."
+              "tag": "Backend",
+              "title": "Built Dynamic Content APIs with Sling Servlets & JCR Models",
+              "metric": "Real-time delivery \u00b7 RESTful endpoints",
+              "description": "Developed custom Sling Servlets backed by JCR-SQL2 queries and Sling Models for dynamic product image rendering and real-time press release delivery through RESTful endpoints."
             },
             {
-              "title": "Dynamic API Integration",
-              "description": "Developed custom Sling Servlets with Sling Models and JCR-SQL2 for product image rendering and real-time press updates."
+              "tag": "Tooling",
+              "title": "Automated Large-Scale DAM Metadata via Groovy Scripts",
+              "metric": "Bulk operations \u00b7 improved repo consistency",
+              "description": "Scripted Groovy-based automation for large-scale DAM metadata operations, dramatically reducing manual repository maintenance and improving consistency of asset metadata governance at scale."
             },
             {
-              "title": "JCR Automation with Groovy",
-              "description": "Automated metadata operations in JCR using Groovy scripts, enhancing repository maintainability and efficiency."
+              "tag": "DevOps",
+              "title": "Built Environment-Specific AEM Runmode Configuration",
+              "metric": "Zero core code changes across envs",
+              "description": "Developed a lower-environment AEM runmode configuration system enabling environment-specific settings (dev, stage, prod) without any changes to core application code \u2014 greatly reducing deployment risk."
             }
           ]
         }
@@ -161,20 +206,21 @@
           "location": "Hyderabad, India",
           "workItems": [
             {
-              "title": "React Component Development",
-              "description": "Applied core React concepts such as components, hooks, props, and state management to build scalable UI features."
+              "tag": "Impact",
+              "title": "Shipped Global Dark/Light Mode Toggle Across Entire Site",
+              "metric": "Site-wide theming \u00b7 React + Tailwind CSS",
+              "description": "Designed and implemented a global theme-switching system using React context and Tailwind CSS, enabling a seamless dark/light mode toggle that persisted across all pages \u2014 a highly visible, user-facing feature shipped to production."
             },
             {
-              "title": "Reusable UI Features",
-              "description": "Built reusable and responsive UI components, including a navigation bar with routing and a validated 'Contact Us' form."
-            },
-            {
-              "title": "Dark/Light Mode Implementation",
-              "description": "Implemented a global dark/light mode toggle across the website using React and Tailwind CSS."
+              "tag": "Frontend",
+              "title": "Built Scalable Reusable Component Library",
+              "metric": "Reusable components \u00b7 responsive \u00b7 production-deployed",
+              "description": "Developed a library of reusable, responsive UI components \u2014 including a multi-level navigation bar with React Router and a client-side validated Contact form \u2014 establishing foundational design patterns used across the project."
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "title": "AEM Developer & Full Stack Engineer"
 }
